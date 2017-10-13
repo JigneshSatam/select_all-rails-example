@@ -11,16 +11,18 @@ default: &default
   timeout: 5000
 
 development:
+  <<: *default
   database:
   pool:
   host: localhost
 
 test:
+  <<: *default
   adapter: postgresql
   database: idfy_company_test
   pool: 26
 
-development:
+prduction:
   <<: *default
-  database: db/development.sqlite3
+
 
