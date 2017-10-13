@@ -22,7 +22,7 @@ test:
   database: idfy_company_test
   pool: 26
 
-prduction:
+production:
   <<: *default
 
 
